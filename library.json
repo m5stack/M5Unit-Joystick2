@@ -1,0 +1,24 @@
+{
+  "name": "M5UnitJoystick2",
+  "description": "Library for M5Stack M5Unit Joystick2",
+  "keywords": "M5GFX,M5Stack,M5UnitJoystick2",
+  "authors": {
+    "name": "M5Stack",
+    "url": "http://www.m5stack.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m5stack/M5Unit-Joystick2.git"
+  },
+  "version": "1.0.0",
+  "frameworks": "arduino",
+  "platforms": [
+    "espressif32",
+    "native"
+  ],
+  "headers": "M5UnitJoystick2.h",
+  "dependencies": {
+      "M5Unified": "*",
+      "M5GFX": "*"
+  }  
+}
