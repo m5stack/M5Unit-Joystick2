@@ -160,9 +160,9 @@ void M5UnitJoystick2::set_joy_adc_value_cal(uint16_t x_neg_min, uint16_t x_neg_m
     write_bytes(_addr, JOYSTICK2_ADC_VALUE_CAL_REG, (uint8_t *)&data[0], 16);
 }
 
-void M5UnitJoystick2::get_joy_adc_12bits_value_cal(uint16_t *x_neg_min, uint16_t *x_neg_max, uint16_t *x_pos_min,
-                                                   uint16_t *x_pos_max, uint16_t *y_neg_min, uint16_t *y_neg_max,
-                                                   uint16_t *y_pos_min, uint16_t *y_pos_max)
+void M5UnitJoystick2::get_joy_adc_value_cal(uint16_t *x_neg_min, uint16_t *x_neg_max, uint16_t *x_pos_min,
+                                            uint16_t *x_pos_max, uint16_t *y_neg_min, uint16_t *y_neg_max,
+                                            uint16_t *y_pos_min, uint16_t *y_pos_max)
 {
     uint8_t data[16];
 
