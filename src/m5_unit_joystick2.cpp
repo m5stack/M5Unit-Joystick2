@@ -51,11 +51,11 @@ uint16_t M5UnitJoystick2::get_joy_adc_value_x(adc_mode_t adc_bits)
     uint8_t data[4];
     uint32_t value;
 
-    if (adc_bits == _12bit) {
+    if (adc_bits == ADC_16BIT_RESULT) {
         uint8_t reg = JOYSTICK2_ADC_VALUE_12BITS_REG;
         read_bytes(_addr, reg, data, 2);
         value = data[0] | (data[1] << 8);
-    } else if (adc_bits == _8bit) {
+    } else if (adc_bits == ADC_8BIT_RESULT) {
         uint8_t reg = JOYSTICK2_ADC_VALUE_8BITS_REG;
         read_bytes(_addr, reg, data, 1);
         value = data[0];
@@ -93,11 +93,11 @@ uint16_t M5UnitJoystick2::get_joy_adc_value_y(adc_mode_t adc_bits)
     uint8_t data[4];
     uint32_t value;
 
-    if (adc_bits == _12bit) {
+    if (adc_bits == ADC_16BIT_RESULT) {
         uint8_t reg = JOYSTICK2_ADC_VALUE_12BITS_REG + 2;
         read_bytes(_addr, reg, data, 2);
         value = data[0] | (data[1] << 8);
-    } else if (adc_bits == _8bit) {
+    } else if (adc_bits == ADC_8BIT_RESULT) {
         uint8_t reg = JOYSTICK2_ADC_VALUE_8BITS_REG + 1;
         read_bytes(_addr, reg, data, 1);
         value = data[0];
