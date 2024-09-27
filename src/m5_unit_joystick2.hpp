@@ -81,13 +81,13 @@ public:
 
     /**
      * @brief get Unit Joystick2 button value
-     * @return button value
+     * @return 0 press, 1 no press
      */
     uint8_t get_button_value(void);
 
     /**
      * @brief set Unit Joystick2 rgb color
-     * @param color RGB color
+     * @param color rgb color
      */
     void set_rgb_color(uint32_t color);
 
