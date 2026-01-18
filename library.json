@@ -18,7 +18,5 @@
   ],
   "headers": "M5UnitJoystick2.h",
   "dependencies": {
-      "M5Unified": "*",
-      "M5GFX": "*"
   }  
 }
